@@ -1,0 +1,9 @@
+Go to a video on the course page and open the lectures sidebar.
+Expand all subsections that have completed lectures on them.
+Open your browser's developer tools. You can do this by pressing CTRL + SHIFT + I or COMMAND + SHIFT + I or F12 or somewhere under tools > developer tools depending on your browser and OS. (Google it if none of these work)
+Make sure you opened the developer tools on the Udemy page.
+In the developer tools, go to the console and input the follow JavaScript code.
+
+document.querySelectorAll('li input[type=checkbox]:checked').forEach((box, i) => setTimeout(() => box.click(), i * 50))
+
+***make sure “allow pasting” before input the code into the console***
